@@ -37,3 +37,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.Admin-card:hover{
+    border: 2px solid #B9375D;
+    background: radial-gradient(#FAF9EE,#B9375D);
+    transform: scale(1.1);
+    overscroll-behavior-x: 0px 12px 32px rgb(0,0,1.5);
+}
