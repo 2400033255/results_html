@@ -1,16 +1,16 @@
 body{
     margin: 0;
     padding: 40px;
-     background: linear-gradient(to left, #00c6ff, #0072ff);
+   background: linear-gradient(to right, #4facfe, #00f2fe);
 }
-.Admin-heading{
+.Student-heading{
     text-align: center;
     align-items: center;
     font-size: 45px;
     color: #093FB4;
     
 }
-.Admin-img{
+.Student-img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -23,13 +23,13 @@ body{
 
 
 }
-.Admin-card{
+.Student-card{
    display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 900px;
     background-color: #fff;
-    border:10px solid rgb(111, 226, 235);
+    border:10px solid rgb(84, 193, 226);
     border-radius: 16px 10px 10px;
     align-items: center;
     padding: 20px;
@@ -37,9 +37,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.Admin-card:hover{
-    border: 2px solid #70a3dd;
-    background: radial-gradient(#FAF9EE,#69bfe7);
+.Student-card:hover{
+    border: 2px solid #6dc2e4;
+    background: radial-gradient(#FAF9EE,#6ce4ec);
     transform: scale(1.1);
     overscroll-behavior-x: 0px 12px 32px rgb(0,0,1.5);
 }

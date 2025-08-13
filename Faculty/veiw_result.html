@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Faculty Results - Insert/View</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="veiwre.css" />
 </head>
 <body>
-    
+  <div class="container my-5">
+    <h2 class="mb-4"> Results Management</h2>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-4" id="resultsTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="insert-tab" data-bs-toggle="tab" data-bs-target="#insert" type="button" role="tab" aria-controls="insert" aria-selected="true">Insert Results</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="view-tab" data-bs-toggle="tab" data-bs-target="#view" type="button" role="tab" aria-controls="view" aria-selected="false">View Results</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="resultsTabContent">
+
+      <!-- Insert Results Tab -->
+      <div class="tab-pane fade show active" id="insert" role="tabpanel" aria-labelledby="insert-tab">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <label for="course" class="form-label fw-semibold">Course <span class="text-danger">*</span></label>
+            <select id="course" class="form-select" required>
+              <option value="" disabled selected>Select Course</option>
+              <option>Algorithms</option>
+              <option>Data Structures</option>
+              <option>Linear Algebra</option>
+            </select>
+            <div class="invalid-feedback">Please select a course.</div>
+          </div>
+          <div class="col-md-4">
+            <label for="student" class="form-label fw-semibold">Student <span class="text-danger">*</span></label>
+            <select id="student" class="form-select" required>
+              <option value="" disabled selected>Select Student</option>
+              <option>Jane Doe</option>
+              <option>John Smith</option>
+              <option>Mary Johnson</option>
+            </select>
+            <div class="invalid-feedback">Please select a student.</div>
+          </div>
+          <div class="col-md-2">
+            <label for="internal" class="form-label fw-semibold">Internal Marks</label>
+            <input type="number" id="internal" class="form-control" min="0" max="100" placeholder="0-100">
+          </div>
+          <div class="col-md-2">
+            <label for="external" class="form-label fw-semibold">External Marks</label>
+            <input type="number" id="external" class="form-control" min="0" max="100" placeholder="0-100">
+          </div>
+          <div class="col-md-12">
+            <label for="remarks" class="form-label fw-semibold">Remarks</label>
+            <textarea id="remarks" class="form-control" rows="2" placeholder="Optional remarks"></textarea>
+          </div>
+          <div class="col-12 text-end">
+            <button type="submit" class="btn btn-primary">Submit Result</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- View Results Tab -->
+      <div class="tab-pane fade" id="view" role="tabpanel" aria-labelledby="view-tab">
+        <div class="table-responsive shadow-sm rounded">
+          <table class="table table-bordered table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Result ID</th>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Internal</th>
+                <th>External</th>
+                <th>Total</th>
+                <th>Grade</th>
+                <th>Academic Year</th>
+                <th>Semester</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>R001</td>
+                <td>Jane Doe</td>
+                <td>Algorithms</td>
+                <td>40</td>
+                <td>45</td>
+                <td>85</td>
+                <td>A</td>
+                <td>2025-2026</td>
+                <td>Semester 1</td>
+              </tr>
+              <tr>
+                <td>R002</td>
+                <td>John Smith</td>
+                <td>Data Structures</td>
+                <td>35</td>
+                <td>40</td>
+                <td>75</td>
+                <td>B</td>
+                <td>2025-2026</td>
+                <td>Semester 1</td>
+              </tr>
+              <!-- More rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Bootstrap form validation
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course-wise Student List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="stdco.css" />
+</head>
+<body>
+  <div class="container my-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h3 class="card-title mb-4 text-primary"> Course-wise Student List</h3>
+
+        <!-- Filters -->
+        <form class="row gy-3 gx-4 align-items-end mb-4">
+          <div class="col-md-3">
+            <label for="course" class="form-label">Course</label>
+            <select id="course" class="form-select">
+              <option selected>All</option>
+              <option>Algorithms</option>
+              <option>Data Structures</option>
+              <option>Operating Systems</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="section" class="form-label">Section</label>
+            <select id="section" class="form-select">
+              <option selected>All</option>
+              <option>A</option>
+              <option>B</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="ay" class="form-label">Academic Year</label>
+            <select id="ay" class="form-select">
+              <option selected>2025-2026</option>
+              <option>2024-2025</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="semester" class="form-label">Semester</label>
+            <select id="semester" class="form-select">
+              <option selected>Semester 1</option>
+              <option>Semester 2</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-outline-primary w-100">Filter</button>
+          </div>
+        </form>
+
+        <!-- Student Table -->
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered align-middle text-center">
+            <thead class="table-primary">
+              <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Email</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>S2025001</td>
+                <td>Jane Doe</td>
+                <td>CS101</td>
+                <td>jane.doe@example.com</td>
+                <td><span class="badge bg-success">Active</span></td>
+              </tr>
+              <tr>
+                <td>S2025002</td>
+                <td>John Smith</td>
+                <td>CS102</td>
+                <td>john.smith@example.com</td>
+                <td><span class="badge bg-secondary">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>S2025003</td>
+                <td>Mary Johnson</td>
+                <td>CS103</td>
+                <td>mary.johnson@example.com</td>
+                <td><span class="badge bg-success">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

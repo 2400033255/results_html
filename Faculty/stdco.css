@@ -1,0 +1,59 @@
+body {
+ background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+
+form .form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+form .form-select,
+form .form-control {
+  font-size: 0.9rem;
+}
+
+
+.table {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table th {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #f1f3f5;
+}
+
+.table td {
+  font-size: 0.88rem;
+  color: #444;
+}
+
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  border-radius: 0.35rem;
+}
+
+.badge.bg-success {
+  background-color: #198754 !important;
+}
+
+.badge.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+
+.btn-sm {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}

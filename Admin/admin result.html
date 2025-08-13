@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin result</title>
+    </head>
+    <link rel="stylesheet" href="admin result.css">
+    <style>
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+    <center>
     <h1>Admin result Dashboard</h1>
-    <ul><a href="add student result.html"><li>add student result</li></a><a href="updateresult.html"><li>update student result</li></a>
+    <div class="container">
+    <ul><a href="add student result.html"><li>add student result </li></a><a href="updateresult.html"><li>update student result</li></a>
         <a href="deletestudentresult.html"><li>delete student result</li></a><a href="post results accounments.html"><li>post results accounments</li></ul></a>
-        <center>
+
+          </center>
+           <center>
         <h2>Results</h2>
 
-        <table border="1">
-            <tr><td><b>sno</b></td><td><b>ID</b></td><td><b>Student name</b></td><td><b>Course name</b></td><td><b>marks</b></td><td><b>Action</b></td></tr>
-            <tr><td>1</td><td>3021</td><td>rahul</td><td>frontend</td><td>93</td><td><ul><li>edit</li><li>delete</li></ul></td></tr>
-            <tr><td>2</td><td>5607</td><td>king</td><td>dst</td><td>89</td><td><ul><li>edit</li><li>delete</li></ul></td></tr>
-            <tr><td>3</td><td>7893</td><td>queen</td><td>english</td><td>23</td><td><ul><li>edit</li><li>delete</li></ul></td></tr>
-        </table>
-    
-</center>
-</head>
-<body>
-    
+    <table>
+      <thead>
+        <tr>
+          <th>Sno</th>
+          <th>Student  Name</th>
+          <th>ID</th>
+          <th>Course Name</th>
+          <th>Marks</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Praneeth</td>
+          <td>24003</td>
+          <td>frontEnd</td>
+          <td>98</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Sri</td>
+          <td>24003</td>
+          <td>Data Strutures</td>
+          <td>89</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Satya</td>
+          <td>240005</td>
+          <td>Java</td>
+          <td>92</td>
+            <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+         <tr>
+          <td>4</td>
+          <td>Chowdary</td>
+          <td>240007</td>
+          <td>AIML</td>
+          <td>98</td>
+            <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+</html>
+
+</center>
+
+</div>
 </html>

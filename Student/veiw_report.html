@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Student Report</title>
+  <link rel="stylesheet" href="veiwrep.css">
 </head>
 <body>
-    
+  <div class="report-container">
+
+    <h1>Student Performance Summary</h1>
+
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+      <div class="card">
+        <h2>Pass/Fail</h2>
+        <p class="status pass">Pass</p>
+      </div>
+      <div class="card">
+        <h2>Average Score</h2>
+        <p>82%</p>
+      </div>
+      <div class="card">
+        <h2>Best Course</h2>
+        <p>Mathematics</p>
+      </div>
+    </div>
+
+    <!-- Static Chart Placeholder -->
+    <div class="chart-placeholder">
+      <h2>Course Performance</h2>
+      <div class="bar-chart">
+        <div class="bar" style="--height: 80%;">Math</div>
+        <div class="bar" style="--height: 65%;">Science</div>
+        <div class="bar" style="--height: 90%;">English</div>
+        <div class="bar" style="--height: 50%;">History</div>
+        <div class="bar" style="--height: 70%;">Art</div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>

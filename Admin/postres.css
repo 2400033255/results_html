@@ -1,0 +1,27 @@
+body {
+  background: linear-gradient(to left, #00c6ff, #0072ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, h4 {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.list-group-item h5 {
+  font-weight: 600;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  border-radius: 0.4rem;
+}

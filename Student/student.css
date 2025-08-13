@@ -1,45 +1,48 @@
-body{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
     margin: 0;
-    padding: 40px;
-    background: linear-gradient(to right, #FAF9EE,#B9375D);
+    padding: 0;
+    color: #2c3e50;
 }
-.Student-heading{
+
+header {
+    background-color: #1a252f;
+    color: #ffffff;
+    padding: 40px 0;
     text-align: center;
-    align-items: center;
-    font-size: 45px;
-    color: #093FB4;
-    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.Student-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 160;
-    width: 160;
-    border: 10px;
-    border-color: #347433;
-    border-radius: 12px;
-    box-shadow: 0px 12px 14px rgb(0,0, 0.5);
 
-
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
-.Student-card{
-   display: flex;
-    flex-direction: column;
+
+.image-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 900px;
-    background-color: #fff;
-    border:10px solid rgb(128, 0, 0);
-    border-radius: 16px 10px 10px;
-    align-items: center;
+    gap: 30px;
+    margin: 60px auto;
     padding: 20px;
-     gap:30px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
 }
-.Student-card:hover{
-    border: 2px solid #B9375D;
-    background: radial-gradient(#FAF9EE,#B9375D);
-    transform: scale(1.1);
-    overscroll-behavior-x: 0px 12px 32px rgb(0,0,1.5);
+
+.image-container a img {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+    border-color: #a0aec0;
 }

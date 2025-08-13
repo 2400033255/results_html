@@ -1,0 +1,43 @@
+body {
+   background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+}
+
+h2 {
+  font-weight: 700;
+  color: #0c0d0e;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+table {
+  background-color: #fff;
+}
+
+table th,
+table td {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+table tbody tr:hover {
+  background-color: #e8f0fe;
+}
+
+.table-responsive {
+  background: #fff;
+}
+
+@media (max-width: 576px) {
+  .form-label {
+    font-size: 0.85rem;
+  }
+  table th,
+  table td {
+    font-size: 0.8rem;
+  }
+}
